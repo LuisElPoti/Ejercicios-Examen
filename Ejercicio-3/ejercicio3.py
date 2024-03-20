@@ -8,22 +8,15 @@ def min_jumps(x):
         return 0
     if x < 0:
         return min_jumps(-x)
-    s = 0 # Posicion actual luego de k saltos
-    k = 0 # Auxiliar para contar los saltos
+    
     saltos = 0
-    # Mientras la posicion actual sea menor que x o la diferencia entre la posicion actual y x sea impar
-    while s < x or (s - x) % 2 != 0:
-       
-        k += 1
-        s += k
-        
-        print("s: ", s, "k: ", k)
-        
-        if s > x:
-            k -= 1
-            s -= k
-        
-        saltos += 1
+    while (saltos * (saltos + 1) < 2 * x):
+        saltos +=1
+    
+    if (saltos * (saltos + 1) / 2 == x + 1):
+        saltos +=1
+    
+    
         
     return saltos
 
