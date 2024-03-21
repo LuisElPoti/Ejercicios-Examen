@@ -1,4 +1,4 @@
-# Problema Formula 1
+# Ejercicio 4
 
 def score():
     G, P = 1, 1
