@@ -1,0 +1,15 @@
+# Archivos generados por el intérprete de Python
+__pycache__/
+*.pyc
+
+# Entornos virtuales de Python
+venv/
+env/
+*.env
+
+# Archivos de registro y archivos de compilación
+*.log
+
+# Archivos de configuración específicos del sistema
+*.swp
+.DS_Store
