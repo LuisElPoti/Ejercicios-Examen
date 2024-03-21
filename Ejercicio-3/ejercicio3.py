@@ -20,13 +20,15 @@ def min_jumps(x):
         
     return saltos
 
-# Pruebas
-while t < 1 or t > 1000:
-    t = int(input("Ingrese el número de casos de pruebas: "))
+""" Codigo para pedir la cantidad de casos de usos y los valores de x, 
+    Se encuentra comentada para que no interfiera con las pruebas unitarias """
 
-while x < 1 or x > 106:
-    for i in range(t):
-        x = int(input("Ingrese el valor de x: "))
-        print(min_jumps(x))
+# while t < 1 or t > 1000:
+#     t = int(input("Ingrese el número de casos de pruebas: "))
+
+# while x < 1 or x > 106:
+#     for i in range(t):
+#         x = int(input("Ingrese el valor de x: "))
+#         print(min_jumps(x))
         
         
