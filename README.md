@@ -9,3 +9,7 @@ de poetry
 
     poetry init
 
+Despues, debe ejercutar el comando "poetry install" para descargar las dependencias determinadas
+
+Por último, para correr el programa, debe correr la maquina virtual usando el comando "poetry shell", seguido por el comando 
+"python ejercicio4.py"

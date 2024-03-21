@@ -1,0 +1,1 @@
+La palabra o frase no es palindromo
