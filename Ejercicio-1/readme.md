@@ -1,5 +1,4 @@
-1. Para correr el programa, Escriba en consola python ejercicio1.py, debe validar que se encuentra en
-la carpeta Ejercicio-1
+1. Para correr el programa, Escriba en consola python ejercicio1.py, debe validar que se encuentra en la carpeta Ejercicio-1
 
 2. Para correr las pruebas unitarias, escriba en consola:
 
