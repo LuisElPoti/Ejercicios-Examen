@@ -1,7 +1,7 @@
 # Ejercicio 4
 
 def score():
-    G, P = 1, 1
+    G, P = 0, 0
     ganadoresTodos = []
     while True:
         print("Carreras y pilotos")
@@ -44,6 +44,7 @@ def score():
     print("\nLos ganadores son: ")
     for ganadores in ganadoresTodos:
         print(" ".join(map(str, ganadores)))
+    
         
 score()
 
