@@ -17,5 +17,10 @@
 
     Para las pruebas unitarias:
 
+    python test_x.py (sustituyendo x por el numero de prueba que se quiere ejecutar (del 1 al 5))
+
+
+Nota: para salir del entorno virtual usar deactivate
+
 
 
