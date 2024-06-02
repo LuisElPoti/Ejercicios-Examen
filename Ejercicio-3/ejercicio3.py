@@ -1,7 +1,14 @@
 # Ejercicio 3
 
-x = 0
-t = 0
+def validar_numero(prompt, min_val, max_val):
+    while True:
+        try:
+            num = int(input(prompt))
+            if num < min_val or num > max_val:
+                raise ValueError(f"El número debe estar entre {min_val} y {max_val}.")
+            return num
+        except ValueError as e:
+            print(f"Entrada no válida: {e}")
 
 def min_jumps(x):
     if x == 0:
@@ -11,24 +18,19 @@ def min_jumps(x):
     
     saltos = 0
     while (saltos * (saltos + 1) < 2 * x):
-        saltos +=1
+        saltos += 1
     
     if (saltos * (saltos + 1) / 2 == x + 1):
-        saltos +=1
+        saltos += 1
     
-    
-        
     return saltos
 
-""" Codigo para pedir la cantidad de casos de usos y los valores de x, 
-    Se encuentra comentada para que no interfiera con las pruebas unitarias """
+def main():
+    t = validar_numero("Ingrese el número de casos de pruebas (1-1000): ", 1, 1000)
+    
+    for _ in range(t):
+        x = validar_numero("Ingrese el valor de x (1-106): ", 1, 106)
+        print(min_jumps(x))
 
-# while t < 1 or t > 1000:
-#     t = int(input("Ingrese el número de casos de pruebas: "))
-
-# while x < 1 or x > 106:
-#     for i in range(t):
-#         x = int(input("Ingrese el valor de x: "))
-#         print(min_jumps(x))
-        
-        
+if __name__ == "__main__":
+    main()

@@ -1,5 +1,5 @@
 import unittest
-from ejercicio2 import score
+from ejercicio2 import main
 
 """
 Para esta prueba unitaria debe ingresar los siguientes inputs en este orden
@@ -30,7 +30,7 @@ que indican los puntos asignados para cada posición.
 
 class TestScore(unittest.TestCase):
    def test_score(self):
-      score()
+      main()
 
 if __name__ == '__main__':
     unittest.main()
